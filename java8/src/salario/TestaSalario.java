@@ -4,7 +4,7 @@ public class TestaSalario {
 
 	public static void main(String[] args) {
 		
-		Salario salario = new Salario(9000.00);
+		Salario salario = new Salario(8500.00);
 		INSS inss = new INSS();
 		
 		CalculaImposto calcula = new CalculaImposto();
