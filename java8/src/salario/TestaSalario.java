@@ -9,13 +9,14 @@ public class TestaSalario {
 		
 		CalculaImposto calcula = new CalculaImposto();
 		double valorInss = calcula.calcularImposto(salario, inss);
-		System.out.println("INSS: " + valorInss);
+		System.out.println("Valor INSS: " + valorInss);
 		
 		IRPF irpf = new IRPF(valorInss);
 		double valorIRPF = calcula.calcularImposto(salario, irpf);
 		
-		System.out.println("IRPF: " + valorIRPF);
+		System.out.println("Valor IRPF: " + valorIRPF);
 		Double valorSalario = salario.getSalario();
+		System.out.println("Valor plano de saúde: 350,00");
 		System.out.println("Liquido: " + (valorSalario - valorInss - valorIRPF - 350));
 		
 	}
