@@ -17,7 +17,7 @@ public class TestaSalario {
 		System.out.println("Valor IRPF: " + valorIRPF);
 		Double valorSalario = salario.getSalario();
 		System.out.println("Valor plano de saúde: 350,00");
-		System.out.println("Liquido: " + (valorSalario - valorInss - valorIRPF - 350));
+		System.out.println("Líquido: " + (valorSalario - valorInss - valorIRPF - 350));
 		
 	}
 }
